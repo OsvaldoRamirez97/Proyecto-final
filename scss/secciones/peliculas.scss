@@ -1,0 +1,499 @@
+/*Mobile*/
+.peliculas {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "halloweenI halloweenI halloweenI"
+        "halloweenII halloweenII halloweenII"
+        "halloweenIII halloweenIII halloweenIII"
+        "halloweenIV halloweenIV halloweenIV"
+        "halloweenV halloweenV halloweenV"
+        "halloweenVI halloweenVI halloweenVI"
+        "halloweenVII halloweenVII halloweenVII";
+}
+
+.halloweenI {
+    grid-area: halloweenI;
+    .titlePel {
+        text-align: center;
+        color: #8d4617;
+    }
+
+    .textPel {
+        display: flex;
+
+        .info {
+            text-align: center;
+            margin: 12vh;
+
+            .subtitle {
+                margin-bottom: 5vh;
+                color: #553017;
+            }
+        }
+        img{
+            display: none;
+        }
+    }
+    .trailer,
+    .vid {
+        display: none;
+    }
+}
+
+.halloweenII {
+    grid-area: halloweenII;
+    .titlePel {
+        text-align: center;
+        color: #8d4617;
+    }
+
+    .textPel {
+        display: flex;
+        img{
+            display: none;
+        }
+        .info {
+            text-align: center;
+            margin: 12vh;
+
+            .subtitle {
+                margin-bottom: 5vh;
+                color: #553017;
+            }
+        }
+
+    }
+    .trailer,
+    .vid {
+        display: none;
+    }
+}
+
+.halloweenIII {
+    grid-area: halloweenIII;
+    .titlePel {
+        text-align: center;
+        color: #8d4617;
+    }
+
+    .textPel {
+        display: flex;
+
+        .info {
+            text-align: center;
+            margin: 12vh;
+
+            .subtitle {
+                margin-bottom: 5vh;
+                color: #553017;
+            }
+        }
+
+    }
+    .trailer,
+    .vid {
+        display: none;
+    }
+}
+
+.halloweenIV {
+    grid-area: halloweenIV;
+    .titlePel {
+        text-align: center;
+        color: #8d4617;
+    }
+
+    .textPel {
+        display: flex;
+
+        .info {
+            text-align: center;
+            margin: 12vh;
+
+            .subtitle {
+                margin-bottom: 5vh;
+                color: #553017;
+            }
+        }
+
+    }
+    .trailer,
+    .vid {
+        display: none;
+    }
+}
+
+.halloweenV {
+    grid-area: halloweenV;
+    .titlePel {
+        text-align: center;
+        color: #8d4617;
+    }
+
+    .textPel {
+        display: flex;
+
+        .info {
+            text-align: center;
+            margin: 12vh;
+
+            .subtitle {
+                margin-bottom: 5vh;
+                color: #553017;
+            }
+        }
+
+    }
+    .trailer,
+    .vid {
+        display: none;
+    }
+}
+
+.halloweenVI {
+    grid-area: halloweenVI;
+    .titlePel {
+        text-align: center;
+        color: #8d4617;
+    }
+
+    .textPel {
+        display: flex;
+
+        .info {
+            text-align: center;
+            margin: 12vh;
+
+            .subtitle {
+                margin-bottom: 5vh;
+                color: #553017;
+            }
+        }
+
+    }
+    .trailer,
+    .vid {
+        display: none;
+    }
+}
+
+.halloweenVII {
+    grid-area: halloweenVII;
+    .titlePel {
+        text-align: center;
+        color: #8d4617;
+    }
+
+    .textPel {
+        display: flex;
+
+        .info {
+            text-align: center;
+            margin: 12vh;
+
+            .subtitle {
+                margin-bottom: 5vh;
+                color: #553017;
+            }
+        }
+
+    }
+    .trailer,
+    .vid {
+        display: none;
+    }
+}
+
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+
+    .mainPeliculas {
+        height: 50%;
+
+        .title {
+            text-align: center;
+            color: #806338;
+            margin-bottom: 10vh;
+        }
+
+        .peliculas {
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "halloweenI halloweenI halloweenI"
+                "halloweenII halloweenII halloweenII"
+                "halloweenIII halloweenIII halloweenIII"
+                "halloweenIV halloweenIV halloweenIV"
+                "halloweenV halloweenV halloweenV"
+                "halloweenVI halloweenVI halloweenVI"
+                "halloweenVII halloweenVII halloweenVII";
+        }
+
+        .halloweenI {
+            .titlePel {
+                text-align: center;
+                color: #8d4617;
+            }
+
+            .textPel {
+                display: flex;
+                img{
+                    display: inline;
+                }
+
+                .info {
+                    text-align: center;
+                    margin: 12vh;
+
+                    .subtitle {
+                        margin-bottom: 5vh;
+                        color: #553017;
+                    }
+                }
+
+            }
+
+            .trailer,
+            .vid {
+                display: block;
+                text-align: center;
+                margin: 12vh;
+                color: #553017;
+            }
+        }
+
+        .halloweenII {
+            .titlePel {
+                text-align: center;
+                color: #8d4617;
+            }
+
+            .textPel {
+                display: flex;
+                img{
+                    display: inline;
+                }
+                .info {
+                    text-align: center;
+                    margin: 12vh;
+
+                    .subtitle {
+                        margin-bottom: 5vh;
+                        color: #553017;
+                    }
+                }
+
+            }
+
+            .trailer,
+            .vid {
+                display: block;
+                text-align: center;
+                margin: 12vh;
+                color: #553017;
+            }
+
+        }
+
+        .halloweenIII {
+            .titlePel {
+                text-align: center;
+                color: #8d4617;
+            }
+
+            .textPel {
+                display: flex;
+                img{
+                    display: inline;
+                }
+                .info {
+                    text-align: center;
+                    margin: 12vh;
+
+                    .subtitle {
+                        margin-bottom: 5vh;
+                        color: #553017;
+                    }
+                }
+
+            }
+
+            .trailer,
+            .vid {
+                display: block;
+                text-align: center;
+                margin: 12vh;
+                color: #553017;
+            }
+        }
+
+        .halloweenIV {
+            .titlePel {
+                text-align: center;
+                color: #8d4617;
+            }
+
+            .textPel {
+                display: flex;
+                img{
+                    display: inline;
+                }
+                .info {
+                    text-align: center;
+                    margin: 12vh;
+
+                    .subtitle {
+                        margin-bottom: 5vh;
+                        color: #553017;
+                    }
+                }
+
+            }
+
+            .trailer,
+            .vid {
+                display: block;
+                text-align: center;
+                margin: 12vh;
+                color: #553017;
+            }
+        }
+
+        .halloweenV {
+            .titlePel {
+                text-align: center;
+                color: #8d4617;
+            }
+
+            .textPel {
+                display: flex;
+                img{
+                    display: inline;
+                }
+                .info {
+                    text-align: center;
+                    margin: 12vh;
+
+                    .subtitle {
+                        margin-bottom: 5vh;
+                        color: #553017;
+                    }
+                }
+
+            }
+
+            .trailer,
+            .vid {
+                display: block;
+                text-align: center;
+                margin: 12vh;
+                color: #553017;
+            }
+        }
+
+        .halloweenVI {
+            .titlePel {
+                text-align: center;
+                color: #8d4617;
+            }
+
+            .textPel {
+                display: flex;
+                img{
+                    display: inline;
+                }
+                .info {
+                    text-align: center;
+                    margin: 12vh;
+
+                    .subtitle {
+                        margin-bottom: 5vh;
+                        color: #553017;
+                    }
+                }
+
+            }
+
+            .trailer,
+            .vid {
+                display: block;
+                text-align: center;
+                margin: 12vh;
+                color: #553017;
+            }
+        }
+
+        .halloweenVII {
+            .titlePel {
+                text-align: center;
+                color: #8d4617;
+            }
+
+            .textPel {
+                display: flex;
+                img{
+                    display: inline;
+                }
+                .info {
+                    text-align: center;
+                    margin: 12vh;
+
+                    .subtitle {
+                        margin-bottom: 5vh;
+                        color: #553017;
+                    }
+                }
+
+            }
+
+            .trailer,
+            .vid {
+                display: block;
+                text-align: center;
+                color: #553017;
+            }
+        }
+    }
+
+    .halloweenI {
+        grid-area: halloweenI;
+    }
+
+    .halloweenII {
+        grid-area: halloweenII;
+    }
+
+    .halloweenIII {
+        grid-area: halloweenIII;
+    }
+
+    .halloweenIV {
+        grid-area: halloweenIV;
+    }
+
+    .halloweenV {
+        grid-area: halloweenV;
+    }
+
+    .halloweenVI {
+        grid-area: halloweenVI;
+    }
+
+    .halloweenVII {
+        grid-area: halloweenVII;
+    }
+}
+
+.footerPeliculas{
+    text-align: center;
+    margin: 10vh 0;
+}

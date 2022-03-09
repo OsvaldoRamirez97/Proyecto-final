@@ -1,0 +1,392 @@
+.titleRes {
+  text-align: center;
+  color: #806338;
+}
+
+/* Mobile */
+.resenas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "pelicula1 pelicula1"
+    "pelicula2 pelicula2"
+    "pelicula3 pelicula3"
+    "pelicula4 pelicula4"
+    "pelicula5 pelicula5"
+    "pelicula6 pelicula6"
+    "pelicula7 pelicula7";
+}
+
+.pelicula1 {
+  grid-area: pelicula1;
+
+  h2 {
+    text-align: center;
+    color: #8d4617;
+    margin: 0 10vh;
+
+  }
+
+  .infoRes {
+    display: flex;
+
+    img {
+      width: 300px;
+      height: 450px;
+      display: none;
+    }
+
+    p {
+      margin: 0 5vh;
+    }
+  }
+}
+
+.pelicula2 {
+  grid-area: pelicula2;
+
+  h2 {
+    text-align: center;
+    color: #8d4617;
+    margin-top: 5vh;
+  }
+
+  .infoRes {
+    display: flex;
+
+    img {
+      width: 300px;
+      height: 450px;
+      display: none;
+    }
+
+    p {
+      margin: 0 5vh;
+    }
+
+  }
+}
+
+.pelicula3 {
+  grid-area: pelicula3;
+
+  h2 {
+    text-align: center;
+    color: #8d4617;
+    margin-top: 5vh;
+  }
+
+  .infoRes {
+    display: flex;
+
+    img {
+      width: 300px;
+      height: 450px;
+      display: none;
+    }
+
+    p {
+      margin: 0 5vh;
+    }
+  }
+}
+
+.pelicula4 {
+  grid-area: pelicula4;
+
+  h2 {
+    text-align: center;
+    color: #8d4617;
+    margin-top: 5vh;
+  }
+
+  .infoRes {
+    display: flex;
+
+    img {
+      width: 300px;
+      height: 450px;
+      display: none;
+    }
+
+    p {
+      margin: 0 5vh;
+    }
+  }
+}
+
+.pelicula5 {
+  grid-area: pelicula5;
+
+  h2 {
+    text-align: center;
+    color: #8d4617;
+    margin-top: 5vh;
+  }
+
+  .infoRes {
+    display: flex;
+
+    img {
+      width: 300px;
+      height: 450px;
+      display: none;
+    }
+
+    p {
+      margin: 0 5vh;
+    }
+  }
+}
+
+.pelicula6 {
+  grid-area: pelicula6;
+
+  h2 {
+    text-align: center;
+    color: #8d4617;
+    margin-top: 5vh;
+  }
+
+  .infoRes {
+    display: flex;
+
+    img {
+      width: 300px;
+      height: 450px;
+      display: none;
+    }
+
+    p {
+      margin: 0 5vh;
+    }
+  }
+}
+
+.pelicula7 {
+  grid-area: pelicula7;
+
+  h2 {
+    text-align: center;
+    color: #8d4617;
+    margin-top: 5vh;
+  }
+
+  .infoRes {
+    display: flex;
+
+    img {
+      width: 300px;
+      height: 450px;
+      display: none;
+    }
+
+    p {
+      margin: 0 5vh;
+    }
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .titleRes {
+    text-align: center;
+    color: #806338;
+  }
+
+  .resenas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "pelicula1 pelicula1"
+      "pelicula2 pelicula2"
+      "pelicula3 pelicula3"
+      "pelicula4 pelicula4"
+      "pelicula5 pelicula5"
+      "pelicula6 pelicula6"
+      "pelicula7 pelicula7";
+  }
+
+  .pelicula1 {
+    grid-area: pelicula1;
+
+    h2 {
+      text-align: center;
+      color: #8d4617;
+      margin: 0 10vh;
+
+    }
+
+    .infoRes {
+      display: flex;
+
+      img {
+        width: 300px;
+        height: 450px;
+        display: inline
+      }
+
+      p {
+        margin: 0 5vh;
+      }
+    }
+  }
+
+  .pelicula2 {
+    grid-area: pelicula2;
+
+    h2 {
+      text-align: center;
+      color: #8d4617;
+      margin-top: 5vh;
+    }
+
+    .infoRes {
+      display: flex;
+
+      img {
+        width: 300px;
+        height: 450px;
+        display: inline
+      }
+
+      p {
+        margin: 0 5vh;
+      }
+
+    }
+  }
+
+  .pelicula3 {
+    grid-area: pelicula3;
+
+    h2 {
+      text-align: center;
+      color: #8d4617;
+      margin-top: 5vh;
+    }
+
+    .infoRes {
+      display: flex;
+
+      img {
+        width: 300px;
+        height: 450px;
+        display: inline
+      }
+
+      p {
+        margin: 0 5vh;
+      }
+    }
+  }
+
+  .pelicula4 {
+    grid-area: pelicula4;
+
+    h2 {
+      text-align: center;
+      color: #8d4617;
+      margin-top: 5vh;
+    }
+
+    .infoRes {
+      display: flex;
+
+      img {
+        width: 300px;
+        height: 450px;
+        display: inline
+      }
+
+      p {
+        margin: 0 5vh;
+      }
+    }
+  }
+
+  .pelicula5 {
+    grid-area: pelicula5;
+
+    h2 {
+      text-align: center;
+      color: #8d4617;
+      margin-top: 5vh;
+    }
+
+    .infoRes {
+      display: flex;
+
+      img {
+        width: 300px;
+        height: 450px;
+        display: inline
+      }
+
+      p {
+        margin: 0 5vh;
+      }
+    }
+  }
+
+  .pelicula6 {
+    grid-area: pelicula6;
+
+    h2 {
+      text-align: center;
+      color: #8d4617;
+      margin-top: 5vh;
+    }
+
+    .infoRes {
+      display: flex;
+
+      img {
+        width: 300px;
+        height: 450px;
+        display: inline
+      }
+
+      p {
+        margin: 0 5vh;
+      }
+    }
+  }
+
+  .pelicula7 {
+    grid-area: pelicula7;
+
+    h2 {
+      text-align: center;
+      color: #8d4617;
+      margin-top: 5vh;
+    }
+
+    .infoRes {
+      display: flex;
+
+      img {
+        width: 300px;
+        height: 450px;
+        display: inline
+      }
+
+      p {
+        margin: 0 5vh;
+      }
+    }
+  }
+
+}
+.footerResenas{
+  text-align: center;
+  margin: 10vh 0;
+}

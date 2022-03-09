@@ -1,0 +1,238 @@
+/* Mobile */
+.personajes {
+    .img {
+        width: 50vh;
+        height: 50vh;
+        display: none;
+    }
+
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas: "michael michael"
+    "laurie laurie"
+    "jamie jamie"
+    "samuel samuel"
+    "leigh leigh";
+}
+
+.michael {
+    grid-area: michael;
+
+    h2 {
+        color: #8d4617;
+        text-align: center;
+    }
+
+    .infoPer {
+        display: flex;
+
+        p {
+            margin-left: 2vh;
+            margin-top: 10vh;
+        }
+    }
+}
+
+.laurie {
+    grid-area: laurie;
+    margin-top: 5vh;
+
+    h2 {
+        color: #8d4617;
+        text-align: center;
+    }
+
+    .infoPer {
+        display: flex;
+
+        p {
+            margin-left: 2vh;
+            margin-top: 10vh;
+        }
+    }
+}
+
+.jamie {
+    grid-area: jamie;
+    margin-top: 5vh;
+
+    h2 {
+        color: #8d4617;
+        text-align: center;
+    }
+
+    .infoPer {
+        display: flex;
+
+        p {
+            margin-left: 2vh;
+            margin-top: 10vh;
+        }
+    }
+}
+
+.samuel {
+    grid-area: samuel;
+    margin-top: 5vh;
+
+    h2 {
+        color: #8d4617;
+        text-align: center;
+    }
+
+    .infoPer {
+        display: flex;
+
+        p {
+            margin-left: 2vh;
+            margin-top: 1vh;
+        }
+    }
+}
+
+.leigh {
+    grid-area: leigh;
+    margin-top: 5vh;
+
+    h2 {
+        color: #8d4617;
+        text-align: center;
+    }
+
+    .infoPer {
+        display: flex;
+
+        p {
+            margin-left: 2vh;
+            margin-top: 3vh;
+        }
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .personajes {
+        .img {
+            width: 50vh;
+            height: 50vh;
+            display: inline;
+        }
+
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+        gap: 0px 0px;
+        grid-template-areas: "michael michael"
+        "laurie laurie"
+        "jamie jamie"
+        "samuel samuel"
+        "leigh leigh";
+    }
+
+    .michael {
+        grid-area: michael;
+
+        h2 {
+            color: #8d4617;
+        }
+
+        .infoPer {
+            display: flex;
+
+            p {
+                margin-left: 2vh;
+                margin-top: 10vh;
+            }
+        }
+    }
+
+    .laurie {
+        grid-area: laurie;
+        margin-top: 5vh;
+
+        h2 {
+            color: #8d4617;
+        }
+
+        .infoPer {
+            display: flex;
+
+            p {
+                margin-left: 2vh;
+                margin-top: 10vh;
+            }
+        }
+    }
+
+    .jamie {
+        grid-area: jamie;
+        margin-top: 5vh;
+
+        h2 {
+            color: #8d4617;
+        }
+
+        .infoPer {
+            display: flex;
+
+            p {
+                margin-left: 2vh;
+                margin-top: 10vh;
+            }
+        }
+    }
+
+    .samuel {
+        grid-area: samuel;
+        margin-top: 5vh;
+
+        h2 {
+            color: #8d4617;
+        }
+
+        .infoPer {
+            display: flex;
+
+            p {
+                margin-left: 2vh;
+                margin-top: 1vh;
+            }
+        }
+    }
+
+    .leigh {
+        grid-area: leigh;
+        margin-top: 5vh;
+
+        h2 {
+            color: #8d4617;
+        }
+
+        .infoPer {
+            display: flex;
+
+            p {
+                margin-left: 2vh;
+                margin-top: 3vh;
+            }
+        }
+    }
+
+}
+
+.mainPersonajes {
+    .titlePer {
+        text-align: center;
+        color: #806338;
+        margin-bottom: 10vh;
+    }
+}
+
+.footerPersonajes{
+    text-align: center;
+    margin: 10vh 0;
+}

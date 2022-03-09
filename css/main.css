@@ -1,0 +1,887 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Playfair+Display:wght@400;500&family=Poppins:ital,wght@1,200&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Dela Gothic One", cursive; }
+
+body {
+  background-color: #fcf5eb; }
+
+li, a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #efedf1;
+  text-decoration: none; }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  header .banner {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%; }
+
+.navBar {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  background-color: #8d4617;
+  margin: 3vh;
+  border-radius: 5px; }
+
+li {
+  display: inline-block;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #efedf1;
+  text-decoration: none;
+  align-items: center; }
+  li a {
+    transition: all 0.3s ease 0s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #efedf1;
+    text-decoration: none;
+    align-items: center; }
+  li a:hover {
+    color: #0088a9; }
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto; }
+
+.mySlides {
+  display: none; }
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; }
+
+.left {
+  float: left; }
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; }
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active, .dot:hover {
+  background-color: #717171; }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+.port {
+  width: 1400px;
+  height: 350px; }
+
+/*Mobile*/
+.peliculas {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+  gap: 0px 0px;
+  grid-template-areas: "halloweenI halloweenI halloweenI" "halloweenII halloweenII halloweenII" "halloweenIII halloweenIII halloweenIII" "halloweenIV halloweenIV halloweenIV" "halloweenV halloweenV halloweenV" "halloweenVI halloweenVI halloweenVI" "halloweenVII halloweenVII halloweenVII"; }
+
+.halloweenI {
+  grid-area: halloweenI; }
+  .halloweenI .titlePel {
+    text-align: center;
+    color: #8d4617; }
+  .halloweenI .textPel {
+    display: flex; }
+    .halloweenI .textPel .info {
+      text-align: center;
+      margin: 12vh; }
+      .halloweenI .textPel .info .subtitle {
+        margin-bottom: 5vh;
+        color: #553017; }
+    .halloweenI .textPel img {
+      display: none; }
+  .halloweenI .trailer,
+  .halloweenI .vid {
+    display: none; }
+
+.halloweenII {
+  grid-area: halloweenII; }
+  .halloweenII .titlePel {
+    text-align: center;
+    color: #8d4617; }
+  .halloweenII .textPel {
+    display: flex; }
+    .halloweenII .textPel img {
+      display: none; }
+    .halloweenII .textPel .info {
+      text-align: center;
+      margin: 12vh; }
+      .halloweenII .textPel .info .subtitle {
+        margin-bottom: 5vh;
+        color: #553017; }
+  .halloweenII .trailer,
+  .halloweenII .vid {
+    display: none; }
+
+.halloweenIII {
+  grid-area: halloweenIII; }
+  .halloweenIII .titlePel {
+    text-align: center;
+    color: #8d4617; }
+  .halloweenIII .textPel {
+    display: flex; }
+    .halloweenIII .textPel .info {
+      text-align: center;
+      margin: 12vh; }
+      .halloweenIII .textPel .info .subtitle {
+        margin-bottom: 5vh;
+        color: #553017; }
+  .halloweenIII .trailer,
+  .halloweenIII .vid {
+    display: none; }
+
+.halloweenIV {
+  grid-area: halloweenIV; }
+  .halloweenIV .titlePel {
+    text-align: center;
+    color: #8d4617; }
+  .halloweenIV .textPel {
+    display: flex; }
+    .halloweenIV .textPel .info {
+      text-align: center;
+      margin: 12vh; }
+      .halloweenIV .textPel .info .subtitle {
+        margin-bottom: 5vh;
+        color: #553017; }
+  .halloweenIV .trailer,
+  .halloweenIV .vid {
+    display: none; }
+
+.halloweenV {
+  grid-area: halloweenV; }
+  .halloweenV .titlePel {
+    text-align: center;
+    color: #8d4617; }
+  .halloweenV .textPel {
+    display: flex; }
+    .halloweenV .textPel .info {
+      text-align: center;
+      margin: 12vh; }
+      .halloweenV .textPel .info .subtitle {
+        margin-bottom: 5vh;
+        color: #553017; }
+  .halloweenV .trailer,
+  .halloweenV .vid {
+    display: none; }
+
+.halloweenVI {
+  grid-area: halloweenVI; }
+  .halloweenVI .titlePel {
+    text-align: center;
+    color: #8d4617; }
+  .halloweenVI .textPel {
+    display: flex; }
+    .halloweenVI .textPel .info {
+      text-align: center;
+      margin: 12vh; }
+      .halloweenVI .textPel .info .subtitle {
+        margin-bottom: 5vh;
+        color: #553017; }
+  .halloweenVI .trailer,
+  .halloweenVI .vid {
+    display: none; }
+
+.halloweenVII {
+  grid-area: halloweenVII; }
+  .halloweenVII .titlePel {
+    text-align: center;
+    color: #8d4617; }
+  .halloweenVII .textPel {
+    display: flex; }
+    .halloweenVII .textPel .info {
+      text-align: center;
+      margin: 12vh; }
+      .halloweenVII .textPel .info .subtitle {
+        margin-bottom: 5vh;
+        color: #553017; }
+  .halloweenVII .trailer,
+  .halloweenVII .vid {
+    display: none; }
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .mainPeliculas {
+    height: 50%; }
+    .mainPeliculas .title {
+      text-align: center;
+      color: #806338;
+      margin-bottom: 10vh; }
+    .mainPeliculas .peliculas {
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+      gap: 0px 0px;
+      grid-template-areas: "halloweenI halloweenI halloweenI" "halloweenII halloweenII halloweenII" "halloweenIII halloweenIII halloweenIII" "halloweenIV halloweenIV halloweenIV" "halloweenV halloweenV halloweenV" "halloweenVI halloweenVI halloweenVI" "halloweenVII halloweenVII halloweenVII"; }
+    .mainPeliculas .halloweenI .titlePel {
+      text-align: center;
+      color: #8d4617; }
+    .mainPeliculas .halloweenI .textPel {
+      display: flex; }
+      .mainPeliculas .halloweenI .textPel img {
+        display: inline; }
+      .mainPeliculas .halloweenI .textPel .info {
+        text-align: center;
+        margin: 12vh; }
+        .mainPeliculas .halloweenI .textPel .info .subtitle {
+          margin-bottom: 5vh;
+          color: #553017; }
+    .mainPeliculas .halloweenI .trailer,
+    .mainPeliculas .halloweenI .vid {
+      display: block;
+      text-align: center;
+      margin: 12vh;
+      color: #553017; }
+    .mainPeliculas .halloweenII .titlePel {
+      text-align: center;
+      color: #8d4617; }
+    .mainPeliculas .halloweenII .textPel {
+      display: flex; }
+      .mainPeliculas .halloweenII .textPel img {
+        display: inline; }
+      .mainPeliculas .halloweenII .textPel .info {
+        text-align: center;
+        margin: 12vh; }
+        .mainPeliculas .halloweenII .textPel .info .subtitle {
+          margin-bottom: 5vh;
+          color: #553017; }
+    .mainPeliculas .halloweenII .trailer,
+    .mainPeliculas .halloweenII .vid {
+      display: block;
+      text-align: center;
+      margin: 12vh;
+      color: #553017; }
+    .mainPeliculas .halloweenIII .titlePel {
+      text-align: center;
+      color: #8d4617; }
+    .mainPeliculas .halloweenIII .textPel {
+      display: flex; }
+      .mainPeliculas .halloweenIII .textPel img {
+        display: inline; }
+      .mainPeliculas .halloweenIII .textPel .info {
+        text-align: center;
+        margin: 12vh; }
+        .mainPeliculas .halloweenIII .textPel .info .subtitle {
+          margin-bottom: 5vh;
+          color: #553017; }
+    .mainPeliculas .halloweenIII .trailer,
+    .mainPeliculas .halloweenIII .vid {
+      display: block;
+      text-align: center;
+      margin: 12vh;
+      color: #553017; }
+    .mainPeliculas .halloweenIV .titlePel {
+      text-align: center;
+      color: #8d4617; }
+    .mainPeliculas .halloweenIV .textPel {
+      display: flex; }
+      .mainPeliculas .halloweenIV .textPel img {
+        display: inline; }
+      .mainPeliculas .halloweenIV .textPel .info {
+        text-align: center;
+        margin: 12vh; }
+        .mainPeliculas .halloweenIV .textPel .info .subtitle {
+          margin-bottom: 5vh;
+          color: #553017; }
+    .mainPeliculas .halloweenIV .trailer,
+    .mainPeliculas .halloweenIV .vid {
+      display: block;
+      text-align: center;
+      margin: 12vh;
+      color: #553017; }
+    .mainPeliculas .halloweenV .titlePel {
+      text-align: center;
+      color: #8d4617; }
+    .mainPeliculas .halloweenV .textPel {
+      display: flex; }
+      .mainPeliculas .halloweenV .textPel img {
+        display: inline; }
+      .mainPeliculas .halloweenV .textPel .info {
+        text-align: center;
+        margin: 12vh; }
+        .mainPeliculas .halloweenV .textPel .info .subtitle {
+          margin-bottom: 5vh;
+          color: #553017; }
+    .mainPeliculas .halloweenV .trailer,
+    .mainPeliculas .halloweenV .vid {
+      display: block;
+      text-align: center;
+      margin: 12vh;
+      color: #553017; }
+    .mainPeliculas .halloweenVI .titlePel {
+      text-align: center;
+      color: #8d4617; }
+    .mainPeliculas .halloweenVI .textPel {
+      display: flex; }
+      .mainPeliculas .halloweenVI .textPel img {
+        display: inline; }
+      .mainPeliculas .halloweenVI .textPel .info {
+        text-align: center;
+        margin: 12vh; }
+        .mainPeliculas .halloweenVI .textPel .info .subtitle {
+          margin-bottom: 5vh;
+          color: #553017; }
+    .mainPeliculas .halloweenVI .trailer,
+    .mainPeliculas .halloweenVI .vid {
+      display: block;
+      text-align: center;
+      margin: 12vh;
+      color: #553017; }
+    .mainPeliculas .halloweenVII .titlePel {
+      text-align: center;
+      color: #8d4617; }
+    .mainPeliculas .halloweenVII .textPel {
+      display: flex; }
+      .mainPeliculas .halloweenVII .textPel img {
+        display: inline; }
+      .mainPeliculas .halloweenVII .textPel .info {
+        text-align: center;
+        margin: 12vh; }
+        .mainPeliculas .halloweenVII .textPel .info .subtitle {
+          margin-bottom: 5vh;
+          color: #553017; }
+    .mainPeliculas .halloweenVII .trailer,
+    .mainPeliculas .halloweenVII .vid {
+      display: block;
+      text-align: center;
+      color: #553017; }
+  .halloweenI {
+    grid-area: halloweenI; }
+  .halloweenII {
+    grid-area: halloweenII; }
+  .halloweenIII {
+    grid-area: halloweenIII; }
+  .halloweenIV {
+    grid-area: halloweenIV; }
+  .halloweenV {
+    grid-area: halloweenV; }
+  .halloweenVI {
+    grid-area: halloweenVI; }
+  .halloweenVII {
+    grid-area: halloweenVII; } }
+
+.footerPeliculas {
+  text-align: center;
+  margin: 10vh 0; }
+
+/* Mobile */
+.personajes {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+  gap: 0px 0px;
+  grid-template-areas: "michael michael" "laurie laurie" "jamie jamie" "samuel samuel" "leigh leigh"; }
+  .personajes .img {
+    width: 50vh;
+    height: 50vh;
+    display: none; }
+
+.michael {
+  grid-area: michael; }
+  .michael h2 {
+    color: #8d4617;
+    text-align: center; }
+  .michael .infoPer {
+    display: flex; }
+    .michael .infoPer p {
+      margin-left: 2vh;
+      margin-top: 10vh; }
+
+.laurie {
+  grid-area: laurie;
+  margin-top: 5vh; }
+  .laurie h2 {
+    color: #8d4617;
+    text-align: center; }
+  .laurie .infoPer {
+    display: flex; }
+    .laurie .infoPer p {
+      margin-left: 2vh;
+      margin-top: 10vh; }
+
+.jamie {
+  grid-area: jamie;
+  margin-top: 5vh; }
+  .jamie h2 {
+    color: #8d4617;
+    text-align: center; }
+  .jamie .infoPer {
+    display: flex; }
+    .jamie .infoPer p {
+      margin-left: 2vh;
+      margin-top: 10vh; }
+
+.samuel {
+  grid-area: samuel;
+  margin-top: 5vh; }
+  .samuel h2 {
+    color: #8d4617;
+    text-align: center; }
+  .samuel .infoPer {
+    display: flex; }
+    .samuel .infoPer p {
+      margin-left: 2vh;
+      margin-top: 1vh; }
+
+.leigh {
+  grid-area: leigh;
+  margin-top: 5vh; }
+  .leigh h2 {
+    color: #8d4617;
+    text-align: center; }
+  .leigh .infoPer {
+    display: flex; }
+    .leigh .infoPer p {
+      margin-left: 2vh;
+      margin-top: 3vh; }
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .personajes {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas: "michael michael" "laurie laurie" "jamie jamie" "samuel samuel" "leigh leigh"; }
+    .personajes .img {
+      width: 50vh;
+      height: 50vh;
+      display: inline; }
+  .michael {
+    grid-area: michael; }
+    .michael h2 {
+      color: #8d4617; }
+    .michael .infoPer {
+      display: flex; }
+      .michael .infoPer p {
+        margin-left: 2vh;
+        margin-top: 10vh; }
+  .laurie {
+    grid-area: laurie;
+    margin-top: 5vh; }
+    .laurie h2 {
+      color: #8d4617; }
+    .laurie .infoPer {
+      display: flex; }
+      .laurie .infoPer p {
+        margin-left: 2vh;
+        margin-top: 10vh; }
+  .jamie {
+    grid-area: jamie;
+    margin-top: 5vh; }
+    .jamie h2 {
+      color: #8d4617; }
+    .jamie .infoPer {
+      display: flex; }
+      .jamie .infoPer p {
+        margin-left: 2vh;
+        margin-top: 10vh; }
+  .samuel {
+    grid-area: samuel;
+    margin-top: 5vh; }
+    .samuel h2 {
+      color: #8d4617; }
+    .samuel .infoPer {
+      display: flex; }
+      .samuel .infoPer p {
+        margin-left: 2vh;
+        margin-top: 1vh; }
+  .leigh {
+    grid-area: leigh;
+    margin-top: 5vh; }
+    .leigh h2 {
+      color: #8d4617; }
+    .leigh .infoPer {
+      display: flex; }
+      .leigh .infoPer p {
+        margin-left: 2vh;
+        margin-top: 3vh; } }
+
+.mainPersonajes .titlePer {
+  text-align: center;
+  color: #806338;
+  margin-bottom: 10vh; }
+
+.footerPersonajes {
+  text-align: center;
+  margin: 10vh 0; }
+
+.titleRes {
+  text-align: center;
+  color: #806338; }
+
+/* Mobile */
+.resenas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "pelicula1 pelicula1" "pelicula2 pelicula2" "pelicula3 pelicula3" "pelicula4 pelicula4" "pelicula5 pelicula5" "pelicula6 pelicula6" "pelicula7 pelicula7"; }
+
+.pelicula1 {
+  grid-area: pelicula1; }
+  .pelicula1 h2 {
+    text-align: center;
+    color: #8d4617;
+    margin: 0 10vh; }
+  .pelicula1 .infoRes {
+    display: flex; }
+    .pelicula1 .infoRes img {
+      width: 300px;
+      height: 450px;
+      display: none; }
+    .pelicula1 .infoRes p {
+      margin: 0 5vh; }
+
+.pelicula2 {
+  grid-area: pelicula2; }
+  .pelicula2 h2 {
+    text-align: center;
+    color: #8d4617;
+    margin-top: 5vh; }
+  .pelicula2 .infoRes {
+    display: flex; }
+    .pelicula2 .infoRes img {
+      width: 300px;
+      height: 450px;
+      display: none; }
+    .pelicula2 .infoRes p {
+      margin: 0 5vh; }
+
+.pelicula3 {
+  grid-area: pelicula3; }
+  .pelicula3 h2 {
+    text-align: center;
+    color: #8d4617;
+    margin-top: 5vh; }
+  .pelicula3 .infoRes {
+    display: flex; }
+    .pelicula3 .infoRes img {
+      width: 300px;
+      height: 450px;
+      display: none; }
+    .pelicula3 .infoRes p {
+      margin: 0 5vh; }
+
+.pelicula4 {
+  grid-area: pelicula4; }
+  .pelicula4 h2 {
+    text-align: center;
+    color: #8d4617;
+    margin-top: 5vh; }
+  .pelicula4 .infoRes {
+    display: flex; }
+    .pelicula4 .infoRes img {
+      width: 300px;
+      height: 450px;
+      display: none; }
+    .pelicula4 .infoRes p {
+      margin: 0 5vh; }
+
+.pelicula5 {
+  grid-area: pelicula5; }
+  .pelicula5 h2 {
+    text-align: center;
+    color: #8d4617;
+    margin-top: 5vh; }
+  .pelicula5 .infoRes {
+    display: flex; }
+    .pelicula5 .infoRes img {
+      width: 300px;
+      height: 450px;
+      display: none; }
+    .pelicula5 .infoRes p {
+      margin: 0 5vh; }
+
+.pelicula6 {
+  grid-area: pelicula6; }
+  .pelicula6 h2 {
+    text-align: center;
+    color: #8d4617;
+    margin-top: 5vh; }
+  .pelicula6 .infoRes {
+    display: flex; }
+    .pelicula6 .infoRes img {
+      width: 300px;
+      height: 450px;
+      display: none; }
+    .pelicula6 .infoRes p {
+      margin: 0 5vh; }
+
+.pelicula7 {
+  grid-area: pelicula7; }
+  .pelicula7 h2 {
+    text-align: center;
+    color: #8d4617;
+    margin-top: 5vh; }
+  .pelicula7 .infoRes {
+    display: flex; }
+    .pelicula7 .infoRes img {
+      width: 300px;
+      height: 450px;
+      display: none; }
+    .pelicula7 .infoRes p {
+      margin: 0 5vh; }
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .titleRes {
+    text-align: center;
+    color: #806338; }
+  .resenas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "pelicula1 pelicula1" "pelicula2 pelicula2" "pelicula3 pelicula3" "pelicula4 pelicula4" "pelicula5 pelicula5" "pelicula6 pelicula6" "pelicula7 pelicula7"; }
+  .pelicula1 {
+    grid-area: pelicula1; }
+    .pelicula1 h2 {
+      text-align: center;
+      color: #8d4617;
+      margin: 0 10vh; }
+    .pelicula1 .infoRes {
+      display: flex; }
+      .pelicula1 .infoRes img {
+        width: 300px;
+        height: 450px;
+        display: inline; }
+      .pelicula1 .infoRes p {
+        margin: 0 5vh; }
+  .pelicula2 {
+    grid-area: pelicula2; }
+    .pelicula2 h2 {
+      text-align: center;
+      color: #8d4617;
+      margin-top: 5vh; }
+    .pelicula2 .infoRes {
+      display: flex; }
+      .pelicula2 .infoRes img {
+        width: 300px;
+        height: 450px;
+        display: inline; }
+      .pelicula2 .infoRes p {
+        margin: 0 5vh; }
+  .pelicula3 {
+    grid-area: pelicula3; }
+    .pelicula3 h2 {
+      text-align: center;
+      color: #8d4617;
+      margin-top: 5vh; }
+    .pelicula3 .infoRes {
+      display: flex; }
+      .pelicula3 .infoRes img {
+        width: 300px;
+        height: 450px;
+        display: inline; }
+      .pelicula3 .infoRes p {
+        margin: 0 5vh; }
+  .pelicula4 {
+    grid-area: pelicula4; }
+    .pelicula4 h2 {
+      text-align: center;
+      color: #8d4617;
+      margin-top: 5vh; }
+    .pelicula4 .infoRes {
+      display: flex; }
+      .pelicula4 .infoRes img {
+        width: 300px;
+        height: 450px;
+        display: inline; }
+      .pelicula4 .infoRes p {
+        margin: 0 5vh; }
+  .pelicula5 {
+    grid-area: pelicula5; }
+    .pelicula5 h2 {
+      text-align: center;
+      color: #8d4617;
+      margin-top: 5vh; }
+    .pelicula5 .infoRes {
+      display: flex; }
+      .pelicula5 .infoRes img {
+        width: 300px;
+        height: 450px;
+        display: inline; }
+      .pelicula5 .infoRes p {
+        margin: 0 5vh; }
+  .pelicula6 {
+    grid-area: pelicula6; }
+    .pelicula6 h2 {
+      text-align: center;
+      color: #8d4617;
+      margin-top: 5vh; }
+    .pelicula6 .infoRes {
+      display: flex; }
+      .pelicula6 .infoRes img {
+        width: 300px;
+        height: 450px;
+        display: inline; }
+      .pelicula6 .infoRes p {
+        margin: 0 5vh; }
+  .pelicula7 {
+    grid-area: pelicula7; }
+    .pelicula7 h2 {
+      text-align: center;
+      color: #8d4617;
+      margin-top: 5vh; }
+    .pelicula7 .infoRes {
+      display: flex; }
+      .pelicula7 .infoRes img {
+        width: 300px;
+        height: 450px;
+        display: inline; }
+      .pelicula7 .infoRes p {
+        margin: 0 5vh; } }
+
+.footerResenas {
+  text-align: center;
+  margin: 10vh 0; }
+
+img {
+  height: 340px;
+  width: 260px; }
+
+h5 {
+  color: #806338; }
+
+.btn, .btn-primaty {
+  color: black;
+  background-color: #553017;
+  border: #553017;
+  font-family: "Dela Gothic One", cursive; }
+
+.btn:hover, .btn-primaty:hover {
+  color: black;
+  background-color: #8d4617;
+  border: #8d4617;
+  font-family: "Dela Gothic One", cursive; }
+
+/*Mobile*/
+.productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "producto1 producto2" "producto3 producto4" "producto5 producto6"; }
+
+.producto1 {
+  grid-area: producto1; }
+
+.producto2 {
+  grid-area: producto2; }
+
+.producto3 {
+  grid-area: producto3; }
+
+.producto4 {
+  grid-area: producto4; }
+
+.producto5 {
+  grid-area: producto5; }
+
+.producto6 {
+  grid-area: producto6; }
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "producto1 producto2 producto3" "producto4 producto5 producto6"; }
+  .producto1 {
+    grid-area: producto1; }
+  .producto2 {
+    grid-area: producto2; }
+  .producto3 {
+    grid-area: producto3; }
+  .producto4 {
+    grid-area: producto4; }
+  .producto5 {
+    grid-area: producto5; }
+  .producto6 {
+    grid-area: producto6; } }
+
+.footerTienda {
+  text-align: center;
+  margin: 10vh 0; }
